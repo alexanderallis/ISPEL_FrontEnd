@@ -1,0 +1,117 @@
+$blue_indicate_complete: #d9e6f0;
+$blue_indicate_percentage: #3886c7;
+$grey_indicate_percentage: #cdcfcf;
+$green_indicate_complete: #069d4f;
+$dashboard_card_grey: #9fa1a4;
+$grey_border_indicate_incomplete: solid thin #adaeb1;
+$dashboard_card_border: solid thin #adb1b3;
+
+// Import grid css
+@import "../css/dashboard_card_grid.css";
+
+// Import Roboto Font for Progress Bar
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+.dashboard_card {
+  outline: $dashboard_card_border;
+  border-radius: 10px;
+  background-color: white;
+  padding-bottom: 10px;
+
+  .dashboard_card_inner_container {
+    width:90%;
+    margin: 0 auto;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+
+    .dashboard_card_title {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .dashboard_card_subtitle {
+      font-size: 0.9em;
+      color: $dashboard_card_grey;
+      margin-bottom: 8px;
+    }
+
+    .dashboard_card_progress {
+      width: 100%;
+      height: 2em;
+      margin: 20px 0;
+
+      .dashboard_card_progress_title {
+        font-size:0.7em;
+        color: $dashboard_card_grey;
+      }
+
+      .dashboard_card_progress_bar {
+        display: inline-block;
+        vertical-align: middle;
+        width:78%;
+        height: 6px;
+        margin-right: 3%;
+        background-color: $grey_indicate_percentage;
+        border-radius: 10px;
+
+        .dashboard_card_progress_bar_inner {
+          width:60%;
+          height:100%;
+          background-color: $blue_indicate_percentage;
+          float:left;
+          border-radius: 10px;
+        }
+      }
+
+      .dashboard_card_progress_figure {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: 'Roboto', sans-serif;
+        font-size:1.3em;
+        color: $blue_indicate_percentage;
+      }
+
+    }
+
+    .dashboard_card_topic_list {
+      width:100%;
+
+      .dashboard_card_topic_sublist {
+        width:100%;
+
+        .dashboard_card_topic {
+          display: block;
+          font-size:0.8em;
+          width:93%;
+          border-radius: 5px;
+          padding: 10px 0;
+          padding-left: 7%;
+          margin-bottom: 10px;
+        }
+
+        .dashboard_card_topic_completed {
+          background-color: $blue_indicate_complete;
+        }
+
+        .dashboard_card_topic_incomplete {
+          background-color: white;
+          border: $grey_border_indicate_incomplete
+        }
+
+        //.dashboard_card_topic:first-child {
+        //  float:left;
+        //}
+        //
+        //.dashboard_card_topic:last-child {
+        //  float:right;
+        //}
+
+      }
+
+    }
+
+  }
+
+
+}

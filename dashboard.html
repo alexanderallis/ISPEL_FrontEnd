@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/global_styles.css">
+		<link rel="stylesheet" href="css/dashboard_styles.css">
+	</head>
+	<body>
+
+		<nav class="ispel_nav">
+			<ul class="ispel_nav_left">
+				<li class="ispel_nav_logo"><img src="graphics/ispel_logo.svg" alt="ISPEL Logo"/></li>
+				<li class="ispel_nav_item"><a href="#">Courses</a></li>
+				<li class="ispel_nav_item"><a href="#">Topics</a></li>
+				<li class="ispel_nav_item">
+					<a href="#">Explore</a>
+					<img class="explore_icon" style="height: 1em" src="graphics/explore_icon.svg" alt="Explore Icon"/>
+				</li>
+				<li class="ispel_nav_item"><a href="#">Dashboard</a></li>
+			</ul>
+			<ul class="ispel_nav_right">
+				<li class="ispel_nav_item">UserName</li>
+				<li class="ispel_nav_item">Login</li>
+			</ul>
+		</nav>
+
+		<div class="dashboard_main_container">
+			<div class="dashboard_container_one">
+				<div class="dashboard_exploratory_switch">
+					Exploratory View
+					<label class="toggle_switch">
+					  <input type="checkbox">
+					  <span class="slider round"></span>
+					</label>
+				</div>
+				<h1 class="dashboard_title">Welcome, User!</h1>
+				<div class="dashboard_subtitle">
+					<img class="dashboard_icon" style="height: .8em" src="graphics/dashboard_icon.svg" alt="Dashboard Icon"/>
+					Dashboard
+				</div>
+			</div>
+			<div class="dashboard_container_two">
+
+				<div class="dashboard_card_container section group">
+					<div class="dashboard_card col span_1_of_3">
+						<div class="dashboard_card_inner_container">
+							<h3 class="dashboard_card_title">Machine Learning</h3>
+							<h4 class="dashboard_card_subtitle">2021 Summer</h4>
+							<!-- Progress Bar Goes Here -->
+							<div class="dashboard_card_progress">
+								<div class="dashboard_card_progress_title">Progress</div>
+								<div class="dashboard_card_progress_bar">
+									<div class="dashboard_card_progress_bar_inner"></div>
+								</div>
+								<div class="dashboard_card_progress_figure">60%</div>
+							</div>
+							<ul class="dashboard_card_topic_list">
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Introduction</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">KNN</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Curse of Dimensionality</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Linear Regression</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">K-Means</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Statistical Learning</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Correlation</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Overfitting</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+					<div class="dashboard_card col span_1_of_3">
+						<div class="dashboard_card_inner_container">
+							<h3 class="dashboard_card_title">Discrete Structures</h3>
+							<h4 class="dashboard_card_subtitle"></h4>
+							<!-- Progress Bar Goes Here -->
+							<div class="dashboard_card_progress">
+								<div class="dashboard_card_progress_title">Progress</div>
+								<div class="dashboard_card_progress_bar">
+									<div class="dashboard_card_progress_bar_inner"></div>
+								</div>
+								<div class="dashboard_card_progress_figure">
+									<img src="graphics/complete_checkmark.svg" style="height: 1em" alt="Complete Checkmark"/>
+								</div>
+							</div>
+							<ul class="dashboard_card_topic_list">
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Introduction</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Definition of a Set</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Number Sets</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Empty Set</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Universal Set</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Correlation</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Overfitting</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+					<div class="dashboard_card col span_1_of_3">
+						<div class="dashboard_card_inner_container">
+							<h3 class="dashboard_card_title">Machine Learning</h3>
+							<h4 class="dashboard_card_subtitle">2021 Summer</h4>
+							<!-- Progress Bar Goes Here -->
+							<div class="dashboard_card_progress">
+								<div class="dashboard_card_progress_title">Progress</div>
+								<div class="dashboard_card_progress_bar">
+									<div class="dashboard_card_progress_bar_inner"></div>
+								</div>
+								<div class="dashboard_card_progress_figure">60%</div>
+							</div>
+							<ul class="dashboard_card_topic_list">
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Introduction</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">KNN</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Curse of Dimensionality</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Linear Regression</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">K-Means</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Statistical Learning</li>
+								</ul>
+								<ul class="dashboard_card_topic_sublist">
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Correlation</li>
+									<li class="dashboard_card_topic dashboard_card_topic_incomplete">Overfitting</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<footer>
+		<ul class="footer_list">
+			<li><img src="graphics/ispel_logo_greyscale.svg" style="height: 1em" alt="ISPEL Logo"/></li>
+		</ul>
+	</footer>
+
+	</body>
+</html>
