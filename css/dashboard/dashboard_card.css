@@ -1,4 +1,4 @@
-@import "../css/dashboard_card_grid.css";
+@import "../css/dashboard/dashboard_card_grid.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap");
 .dashboard_card {
   outline: solid thin #adb1b3;

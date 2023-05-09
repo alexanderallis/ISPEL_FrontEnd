@@ -2,11 +2,12 @@
 $border-width: none;
 $border-style: $border-width thin red;
 $ispel-darkblue: #026D8A;
+$content-width: 70%;
 
-@import "../css/nav_styles.css";
-@import "../css/dashboard_card.css";
-@import "../css/footer_styles.css";
-@import "../css/toggle_switch_styles.css";
+@import "../navbar/nav_styles";
+@import "dashboard_card";
+@import "../footer_styles";
+@import "../toggle_switch_styles";
 
 body {
   margin: 0;
@@ -40,7 +41,7 @@ body {
     font-size: 3.5em;
     font-weight: 700;
     color: $ispel-darkblue;
-    width: 80%;
+    width: $content-width;
     margin: 0 auto;
     border: $border-style;
   }
@@ -48,7 +49,7 @@ body {
   .dashboard_subtitle {
     font-size: 1.6em;
     font-weight: 600;
-    width: 80%;
+    width: $content-width;
     margin: 0 auto;
     border: $border-style;
 
@@ -65,14 +66,9 @@ body {
   background-color: #efefef;
 
   .dashboard_card_container {
-    width: 80%;
+    width: $content-width;
     margin: 0 auto;
     position: relative;
     top: -4.7em;
   }
-  //.dashboard_cards {
-  //  width: 80%;
-  //  margin: 0 auto;
-  //  border: $border-style;
-  //}
 }
