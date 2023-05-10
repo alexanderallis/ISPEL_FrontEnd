@@ -1,0 +1,30 @@
+$dashboard_card_border: solid thin #adb1b3;
+
+.grid, .grid-item { box-sizing: border-box; }
+
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 31%;
+  float: left;
+
+  background: white;
+  border-radius: 10px;
+  //border:solid thin red;
+
+  /* vertical gutter */
+  margin-bottom: 20px;  //TODO: Sort out this margin.
+}

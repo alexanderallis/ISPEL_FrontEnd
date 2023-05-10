@@ -7,11 +7,16 @@ $grey_border_indicate_incomplete: solid thin #c9cacc;
 $grey_border_indicate_incomplete_hover: solid thin #64666c;
 $dashboard_card_border: solid thin #adb1b3;
 
-// Import grid css
-@import "../../css/dashboard/dashboard_card_grid.css";
-
-// Import Roboto Font for Progress Bar
+// Import Source Sans 3 & Roboto Font for Progress Bar
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+.dashboard_card_container {
+  //outline: solid thin red;
+}
+
+.dashboard_card {
+  border:solid thin $dashboard_card_border;
+}
 
 .dashboard_card {
   outline: $dashboard_card_border;
@@ -134,5 +139,7 @@ $dashboard_card_border: solid thin #adb1b3;
 
   }
 
-
 }
+
+// Import grid css
+@import "dashboard_masonry_grid";

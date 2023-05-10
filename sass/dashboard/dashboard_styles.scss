@@ -5,9 +5,9 @@ $ispel-darkblue: #026D8A;
 $content-width: 70%;
 
 @import "../navbar/nav_styles";
-@import "dashboard_card";
 @import "../footer_styles";
 @import "../toggle_switch_styles";
+@import "dashboard_card";
 
 body {
   margin: 0;
